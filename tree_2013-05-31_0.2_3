@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="total_price_including_optional_support <= 401.285\ngini = 0.388\nsamples = 72081\nvalue = [53084, 18997]"] ;
+1 [label="total_price_including_optional_support <= 315.32\ngini = 0.256\nsamples = 24991\nvalue = [21220, 3771]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="total_price_including_optional_support <= 201.17\ngini = 0.206\nsamples = 16109\nvalue = [14234, 1875]"] ;
+1 -> 2 ;
+3 [label="gini = 0.132\nsamples = 4716\nvalue = [4380, 336]"] ;
+2 -> 3 ;
+4 [label="gini = 0.234\nsamples = 11393\nvalue = [9854, 1539]"] ;
+2 -> 4 ;
+5 [label="school_metro_urban <= 0.5\ngini = 0.336\nsamples = 8882\nvalue = [6986, 1896]"] ;
+1 -> 5 ;
+6 [label="gini = 0.371\nsamples = 4311\nvalue = [3252, 1059]"] ;
+5 -> 6 ;
+7 [label="gini = 0.299\nsamples = 4571\nvalue = [3734, 837]"] ;
+5 -> 7 ;
+8 [label="total_price_including_optional_support <= 704.5\ngini = 0.438\nsamples = 47090\nvalue = [31864, 15226]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="poverty_level_highest poverty <= 0.5\ngini = 0.411\nsamples = 29761\nvalue = [21159, 8602]"] ;
+8 -> 9 ;
+10 [label="gini = 0.434\nsamples = 13508\nvalue = [9208, 4300]"] ;
+9 -> 10 ;
+11 [label="gini = 0.389\nsamples = 16253\nvalue = [11951, 4302]"] ;
+9 -> 11 ;
+12 [label="resource_type_Trips <= 0.5\ngini = 0.472\nsamples = 17329\nvalue = [10705, 6624]"] ;
+8 -> 12 ;
+13 [label="gini = 0.475\nsamples = 16931\nvalue = [10351, 6580]"] ;
+12 -> 13 ;
+14 [label="gini = 0.197\nsamples = 398\nvalue = [354, 44]"] ;
+12 -> 14 ;
+}

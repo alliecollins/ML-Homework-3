@@ -111,7 +111,7 @@ def temporal_split(df, start_col, end_col, start_date, end_date, dep_var, predic
 	start_date = pd.to_datetime(start_date)
 	end_date = pd.to_datetime(end_date)
 
-	train = df[df[start_col] < start_date]
+	train = df[df[end_col] < start_date]
 	test = df[(df[start_col] >= start_date) & (df[end_col] <= end_date)]
 
 	y_train = train[dep_var]
